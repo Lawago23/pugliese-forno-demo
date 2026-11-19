@@ -111,6 +111,15 @@ main>section:not(.hero)>.wrap:not(.pz-split):not(.bk-tl):not(.im-grid):not(.em-v
 .pz-visit .btn{background:#15100d;color:#f4ece1}
 @media(max-width:800px){.pz-split{grid-template-columns:1fr}.pz-sticky{position:static;aspect-ratio:4/3}}
 
+.sk-foot{padding:clamp(56px,8vw,120px) 0 28px;position:relative}
+.sk-foot .wrap{max-width:1296px;margin:0 auto;padding:0 var(--gutter,24px)}
+.sk-legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:56px;font-size:13px;opacity:.75}
+.f-pz{background:#15100d;color:#f4ece1}
+.f-pz-big{font:italic clamp(56px,12vw,190px)/.9 'DM Serif Display';color:#ef5a24;letter-spacing:-.02em;margin-bottom:48px}
+.f-pz-row{display:flex;justify-content:space-between;gap:32px;align-items:end;flex-wrap:wrap}
+.f-pz h2{font:italic 40px 'DM Serif Display'}.f-pz p{color:#b3a69a}
+.f-pz .btn{background:#ef5a24;color:#fff}.f-pz a{color:inherit}
+@media(min-width:1024px){.nav__bar{position:relative}.nav__logo{position:absolute;left:50%;transform:translateX(-50%);font-size:22px}.nav__links{order:-1}.nav__actions{margin-left:auto}}
 </style>
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -151,30 +160,7 @@ main>section:not(.hero)>.wrap:not(.pz-split):not(.bk-tl):not(.im-grid):not(.em-v
 <section class="ly pz-visit" id="visit"><div class="wrap"><p class="t-label">Besuch</p><h2 class="pz-big">Innenstadt<br>Mayen</h2><div class="pz-row"><dl class="hours" data-assumed><dt>Montag bis Freitag</dt><dd>17:00 bis 22:30</dd><dt>Samstag</dt><dd>12:00 bis 23:00</dd><dt>Sonntag</dt><dd>12:00 bis 22:00</dd></dl><a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Innenstadt%20Mayen">Anfahrt ansehen</a></div></div></section>
 </main>
 
-<footer class="footer closing footer--visit" id="contact" aria-labelledby="close-h">
-  <div class="wrap">
-    <div class="closing__cta close--type">
-      <div class="section-head"><h2 id="close-h">Pizza zum Mitnehmen</h2><p class="t-lead">Bestellen Sie telefonisch und holen Sie warm ab.</p></div>
-      <a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Innenstadt%20Mayen">Anfahrt ansehen<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-    </div>
-    <div class="closing__links">
-      <div class="grid">
-        <div class="span-6 stack-4">
-          <address class="footer__address">Innenstadt, Mayen</address>
-          <p><a class="link" href="https://www.openstreetmap.org/search?query=Innenstadt%20Mayen">Anfahrt ansehen</a></p>
-        </div>
-        <div class="span-6 start-7 stack-4">
-          <h4>Öffnungszeiten</h4>
-          <dl class="hours" data-assumed><dt>Montag bis Freitag</dt><dd>17:00 bis 22:30</dd><dt>Samstag</dt><dd>12:00 bis 23:00</dd><dt>Sonntag</dt><dd>12:00 bis 22:00</dd></dl>
-        </div>
-      </div>
-      <div class="footer__legal">
-        <span>&copy; 2026 Pizzeria Pugliese &nbsp; Beispieldaten</span>
-        <a class="credits" href="credits.html">Fotos von Wikimedia Commons</a>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer class="sk-foot f-pz" id="contact"><div class="wrap"><p class="f-pz-big">Pizzeria Pugliese</p><div class="f-pz-row"><div><h2>Pizza zum Mitnehmen</h2><p>Bestellen Sie telefonisch und holen Sie warm ab.</p></div><a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Innenstadt%20Mayen">Anfahrt ansehen</a></div><div class="sk-legal"><span>&copy; 2026 Pizzeria Pugliese &nbsp; Beispieldaten</span><a class="credits" href="credits.html">Fotos von Wikimedia Commons</a></div></div></footer>
 <nav class="actionbar" aria-label="Schnellzugriff">
   <a class="btn btn--primary" href="https://www.openstreetmap.org/search?query=Innenstadt%20Mayen">Anfahrt</a>
 </nav>
